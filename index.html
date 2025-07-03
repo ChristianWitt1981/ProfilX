@@ -6,10 +6,19 @@
   <title>Willkommen</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+    <body>
+  <img src="img/menü.png" alt="Menü" class="menu-button" onclick="toggleMenu()" />
+  <div id="dropdownMenu" class="dropdown-menu">
+    <ul>
+      <li><a href="#">Profil</a></li>
+      <li><a href="#">Einstellungen</a></li>
+      <li><a href="#">Impressum</a></li>
+    </ul>
+  </div>
+
   <div class="wrapper">
     <div class="content">
-      <img src="logo.png" alt="Logo" class="logo" />
+      <img src="img/logo.png" alt="Logo" class="logo"/>
       <p>
         Danke,<br>dass du mich gescannt hast.<br><br>
         Drücke auf <strong>Start</strong>, falls du Interesse hast!
@@ -17,5 +26,21 @@
     </div>
     <button onclick="window.location.href='start.html'">Start</button>
   </div>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById("dropdownMenu");
+      menu.classList.toggle("show");
+    }
+
+    // Klick außerhalb schließt Menü
+    document.addEventListener("click", function(event) {
+      const menu = document.getElementById("dropdownMenu");
+      const button = document.querySelector(".menu-button");
+      if (!menu.contains(event.target) && !button.contains(event.target)) {
+        menu.classList.remove("show");
+      }
+    });
+  </script>
+</body>
 </body>
 </html>

@@ -76,7 +76,7 @@ button:hover {
 
 .progress-bar {
   height: 100%;
-  background-color: #00BFFF;
+  background-color: rgba(0, 191, 255, 0.3);
   transition: width 0.4s ease;
 }
 

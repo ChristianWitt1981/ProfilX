@@ -61,7 +61,7 @@ button {
 }
 
 button:hover {
-  background-color: #3ac451;
+  background-color: #00BFFF;
 }
 
 /* === Fortschrittsbalken === */
@@ -329,5 +329,5 @@ textarea:focus {
 
 .footer-note a:hover {
   text-decoration: underline;
-  color: #4cd964;
+  color: 00BFFF;
 }

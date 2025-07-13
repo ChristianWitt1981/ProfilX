@@ -8,51 +8,19 @@
 </head>
 <body>
   <div class="progress-container">
-    <div class="progress-bar" style="width: 33%;"></div>
+    <div class="progress-bar" style="width: 25%;"></div>
   </div>
 
   <div class="wrapper">
-    <div class="step-info">Schritt 1 von 3</div>
     <div class="content">
-      <p>Hey! 👋<br><br>Mein Name ist <strong>Christian</strong> 😊<br><br>
-  ich freue mich, dich kennenzulernen!<br><br>Schau dir mein Profil an.<br><br>👇<br><br>
-  <img src="profil.jpg" alt="Profilbild von Christian" class="emoji-image" onclick="openZoom(this)" /><br><br>
+      <p>
+  Hey, wie schön, dass du hier bist! 👋<br><br>
+  Ich bin <strong>Christian</strong> – und ich freue mich, dich kennenzulernen. 😊<br><br>
+  Wenn du ein paar Minuten Zeit hast, zeige ich dir, wer ich bin – und vielleicht magst du mir am Ende auch etwas über dich erzählen.<br><br>
+  Bereit? Dann klick auf <strong>Weiter</strong> 👇
 </p>
     </div>
-    <button onclick="window.location.href='weiter.html'">Weiter</button>
+    <button onclick="window.location.href='profil.html'">Weiter</button>
   </div>
-<div class="zoom-overlay" id="zoomOverlay" onclick="closeZoom(event)">
-  <div class="zoom-content" onclick="event.stopPropagation()">
-    <button class="close-button" onclick="closeZoomDirect(event)">×</button>
-    <img src="" alt="Zoomed Image" id="zoomedImage" />
-    <div class="zoom-text">
-      <h3>Mehr über mich</h3>
-      <p><br>
-        Ruhiger, technikbegeisterter Typ mit Leidenschaft für Informatik und 3D-Grafikdesign. Ich liebe es, in neue digitale Welten einzutauchen, genieße aber genauso entspannte Abende mit Freunden oder spontane Ausflüge. Zwischen Codezeilen und kreativen Ideen suche ich jemanden, der genauso gerne lacht wie denkt. Ich freue mich, über nette Kontakte.😄<br><br>
-        ✨ Interessen: Technik, Natur, gute Gespräche<br><br>
-        📍 Standort: Nordhausen<br><br>
-        💬 Sprachen: Deutsch, Englisch
-      </p>
-    </div>
-  </div>
-</div>
-
-  <script>
-  function openZoom(img) {
-    document.getElementById("zoomedImage").src = img.src;
-    document.getElementById("zoomOverlay").classList.add("show");
-  }
-
-  function closeZoom(event) {
-    if (event.target.id === "zoomOverlay") {
-      document.getElementById("zoomOverlay").classList.remove("show");
-    }
-  }
-
-  function closeZoomDirect(event) {
-    event.stopPropagation();
-    document.getElementById("zoomOverlay").classList.remove("show");
-  }
-</script>
 </body>
 </html>

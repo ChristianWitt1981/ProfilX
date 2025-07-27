@@ -31,18 +31,4 @@ ProfilX hilft Menschen, sich auf charmante und persönliche Weise vorzustellen �
 
 ---
 
-## 📁 Projektstruktur
-
-```bash
-📦 ProfilX
-├── 📁 img             # Bilder und Icons
-├── 📁 css             # Stylesheets
-├── 📁 js              # Später: JavaScript-Dateien
-├── 📄 index.html      # Startseite
-├── 📄 start.html      # Willkommen
-├── 📄 profil.html     # Persönliches Profil
-├── 📄 weiter.html     # Folge-Seite
-├── 📄 kontakt.html    # Nachrichtenformular
-├── 📄 impressum.html  # Rechtliches
-├── 📄 manifest.json   # PWA-Unterstützung
-└── 📄 README.md       # Dieses Dokument
+## 📁 Projektstruktur..

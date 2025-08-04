@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px 30px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  max-width: 400px;
+  width: 90%;
+  position: relative;
+}  
+
+.qr-code {
+  width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.qr-code:hover {
+  transform: scale(1.05);
+}
+
+.logo {
+  width: 180px;
+  height: auto;
+  margin-top: 10px;
+}
+
+.share-button {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.qr-hint {
+  font-size: 1rem;
+  color: #eee;
+  margin-bottom: 20px;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+button {
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #00BFFF22;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+button:hover {
+  background-color: #0099cc;
+  transform: scale(1.03);
+}

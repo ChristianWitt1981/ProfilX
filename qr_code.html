@@ -4,57 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ProfilX QR-Code</title>
-  <style>
-    body {
-      margin: 0;
-      background-color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding-top: 80px;
-      position: relative;
-    }
-
-    .share-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
-    }
-
-    .qr-code {
-     width: 100vw;
-     max-width: 400px;
-     height: auto;
-     margin-bottom: 20px;
-     cursor: pointer;
-     margin-top: 100px; 
-     }
-
-    .logo {
-      width: 20vw;
-      max-width: 180px;
-      height: auto; 
-    }
-  </style>
+  <link rel="stylesheet" href="css/qr_style.css" />
 </head>
 <body>
 
   <!-- Teilen Button oben rechts -->
   <img class="share-button" src="img/teilen.png" alt="Teilen" onclick="shareProfilX()">
 
-  <!-- QR-Code -->
-  <a href="qr-code.png" download>
-    <img class="qr-code" src="img/code.png" alt="ProfilX QR-Code">
-  </a>
+  <div class="qr-container">
+    <!-- QR-Code -->
+    <a href="img/qr-code.png" download>
+      <img class="qr-code" src="img/code.png" alt="ProfilX QR-Code">
+    </a>
 
-  <!-- ProfilX Logo -->
-  <img class="logo" src="img/logo.png" alt="ProfilX Logo">
+    <!-- ProfilX Logo -->
+    <img class="logo" src="img/logo.png" alt="ProfilX Logo">
+
+    <!-- Zurück-Button -->
+    <button onclick="goBack()">Zurück</button>
 
   <script>
     function shareProfilX() {
@@ -67,6 +34,10 @@
       } else {
         alert("Teilen wird von deinem Gerät leider nicht unterstützt.");
       }
+    }
+
+    function goBack() {
+      window.history.back();
     }
   </script>
 </body>

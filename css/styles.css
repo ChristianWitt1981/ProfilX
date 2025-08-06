@@ -415,3 +415,19 @@ textarea:focus {
   color: #ccc;
   margin-bottom: 30px;
 }
+
+.link-button {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #00BFFF;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.8rem;
+  transition: color 0.3s ease;
+}
+
+.link-button:hover {
+  color: #ddd;
+  text-decoration: underline;
+}

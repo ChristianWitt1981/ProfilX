@@ -3,49 +3,37 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Etwas über dich – Schritt 3</title>
+  <title>Kontakt – Schritt 3</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <!-- Fortschrittsbalken -->
   <div class="progress-container">
-    <div class="progress-bar" style="width: 100%;"></div>
+    <div class="progress-bar" style="width: 80%;"></div>
   </div>
 
   <div class="wrapper">
-
     <div class="content">
       <p>
-        <strong>Jetzt bist du dran!..</strong>😊<br><br><br>Schreib🖋mir etwas, ich freue mich über eine 📩..
+        <strong>Schreib mir etwas schönes</strong> – ich freue mich auf deine Nachricht! 😊<br><br>
+        Sag kurz Hallo, stell dich vor oder schreib mir einfach, was dich interessiert.
       </p>
-
-      <!-- Formular für Formspree -->
-      <form action="https://formspree.io/f/mldnwbjg" method="POST" class="form-block">
-        <!-- Weiterleitung nach dem Absenden -->
-        <input type="hidden" name="_redirect" value="https://profilx.netlify.app/start.html">
-
-        <!-- Name -->
-        <label>
-          Dein Name:<br>
-          <input type="text" name="name" required />
-        </label><br><br>
-
-        <!-- Kontakt -->
-        <label>
-          Wie kann ich dich kontaktieren? E-Mail, Tel<br>
-          <input type="text" name="kontakt" required />
-        </label><br><br>
-
-        <!-- Nachricht -->
-        <label>
-          Eine kurze Nachricht:<br><br>
-          <textarea name="nachricht" rows="8" placeholder="deine Nachricht …"></textarea>
-        </label><br><br>
-
-        <!-- Absenden -->
-        <button type="submit">Absenden</button>
-      </form>
     </div>
+
+    <!-- E-Mail Button -->
+    <button onclick="window.location.href='mailto:christianwitt1981@gmx.de?subject=Nachricht%20zu%20ProfilX&body=Hallo%20Christian,%0A%0Aich%20habe%20dein%20ProfilX%20gesehen%20und%20...'">
+      ✉️ E-Mail senden
+    </button>
+
+    <!-- Telefon Button -->
+    <button onclick="window.location.href='tel:+4915252967341'">
+      📞 📝 Anrufen/Nachricht
+    </button>
+
+    <!-- Weiter zur Dankesseite -->
+    <button onclick="window.location.href='weiter3.html'">
+      Weiter
+    </button>
   </div>
 </body>
 </html>
